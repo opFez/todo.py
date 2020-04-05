@@ -50,6 +50,12 @@ if option == "a":
 
 elif option == "l":
 
+    # header message
+
+    def header():
+        print("TODO-list:" + "\n")
+    header()
+
     # a bit of explanation here.
     # the list of entries displays in random order for whatever reason.
     # this is why there is a sorting step in the listing process.
@@ -61,7 +67,7 @@ elif option == "l":
     entrylist.sort()
     for entry in entrylist:
         f = open(entry, "r")
-        print(entry + ":  " + f.read())
+        print(entry + ": " + f.read())
         f.close()
 
 elif option == "r":
