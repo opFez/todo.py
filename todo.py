@@ -61,7 +61,8 @@ elif option == "l":
     # the list of entries displays in random order for whatever reason.
     # this is why there is a sorting step in the listing process.
 
-    entrylist = os.listdir().sort()
+    entrylist = os.listdir()
+    entrylist.sort()
 
     for entry in entrylist:
         f = open(entry, "r")
