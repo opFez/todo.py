@@ -6,7 +6,7 @@
 
 ## usage
 
-syntax: `todo.py [**a** *text*] [**l**] [**r** *entry*]`
+syntax: todo.py [**a** *text*] [**l**] [**r** *entry*]
 
 options:
 
