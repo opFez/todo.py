@@ -18,6 +18,12 @@ USER = "erik"
 os.chdir("/home/" + USER + "/txt/todo")
 
 
+# header message
+
+def header():
+    print("TODO-list:" + "\n")
+
+
 # exit if no arguments are given
 
 if len(sys.argv) < 2:
@@ -50,21 +56,13 @@ if option == "a":
 
 elif option == "l":
 
-    # header message
-
-    def header():
-        print("TODO-list:" + "\n")
     header()
 
-    # a bit of explanation here.
     # the list of entries displays in random order for whatever reason.
     # this is why there is a sorting step in the listing process.
 
-    entrylist = []
-    for file in os.listdir():
-        entrylist.append(file)
+    entrylist = os.listdir().sort()
 
-    entrylist.sort()
     for entry in entrylist:
         f = open(entry, "r")
         print(entry + ": " + f.read())
