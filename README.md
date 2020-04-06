@@ -1,6 +1,6 @@
 # <span>todo.py</span>
 
-**************`todo.py` is a simple todo manager written in Python 3.
+`todo.py` is a simple todo manager written in Python 3.
 
 `todo.py` is public domain, released under the [unlicense](https://unlicense.org/).
 
