@@ -79,7 +79,10 @@ elif option == "r":
         os.remove("1")
 
     else:
-        for file in os.listdir():
+        os.remove(str(sys.argv[2]))
+        entrylist = os.listdir()
+        entrylist.sort()
+        for file in entrylist:
             if int(file) > int(sys.argv[2]):
                 entry_name = file
                 new_name = int(file) - 1
