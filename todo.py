@@ -18,7 +18,7 @@ USER = "erik"
 os.chdir("/home/" + USER + "/txt/todo")
 
 
-# header message
+# customizable header message for the 'l' option
 
 def header():
     print("TODO-list:" + "\n")
@@ -42,17 +42,15 @@ if option == "a":
     elif len(os.listdir()) == 0:
 
         current_entry = 1
-        entry = open(str(current_entry), "w+")
-        entry.write(sys.argv[2])
-        entry.close()
+        with open(str(current_entry), "w+") as entry:
+            entry.write(sys.argv[2])
 
     else:
 
         latest_entry = max(os.listdir())
         current_entry = str(int(latest_entry) + 1)
-        entry = open(current_entry, "w+")
-        entry.write(sys.argv[2])
-        entry.close()
+        with open(current_entry, "w+") as entry:
+            entry.write(sys.argv[2])
 
 elif option == "l":
 
