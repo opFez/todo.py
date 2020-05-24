@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+__version__ = 1.0
 
 # todopy - a todo script written in python
 # options:
@@ -10,19 +11,15 @@
 import os
 import sys
 
-
 # first need to change working directory,
 # change this to wherever you want to store your entries.
 
 USER = "erik"
-os.chdir("/home/" + USER + "/txt/todo")
-
+os.chdir("/home/" + USER + "/doc/todo")
 
 # customizable header message for the 'l' option
-
 def header():
     print("TODO-list:" + "\n")
-
 
 # exit if no arguments are given
 
