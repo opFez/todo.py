@@ -15,3 +15,9 @@ options:
 * l - list entries
 * r *entry* - remove entry
     * *entry* is a positive integer
+
+## about
+
+this was my first "real" project (with practical value).
+
+it's listed here purely for archiving purposes.
